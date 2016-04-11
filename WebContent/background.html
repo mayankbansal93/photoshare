@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<title>PHOTOshare</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sheet1.css" rel="stylesheet">
+
+	
+</head>
+
+<body>
+<h1><center>PHOTOshare</center></h1>
+<h2><center><em>Sharing Memories...</em></center></h2>
+   
+   <a href="login.jsp"> <img src="img/Background/logo.png" height="150px" width="150px"/></a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/back.js"></script>
+<script src="js/transition.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/alert.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/popover.js"></script>
+
+</body>
+<script type="text/javascript">
+var now = new Date();
+var hours = now.getHours();
+
+
+
+document.bgColor="#CC9900";
+//18-20 night
+if (hours >= 17 && hours < 21){
+document.write ('<body style="background-image:url(img/Background/Evening.jpg)";>');
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundPosition = "top right"
+document.body.style.backgroundSize = "cover";
+}
+//20-21 night
+else if (hours >= 20 && hours < 22){
+document.write ('<body style="background-image:url(img/Background/Night.jpg)";>');
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundPosition = "top right"
+document.body.style.backgroundSize = "cover";
+}
+//22-4 night
+else if (hours >= 22 || hours < 5){
+document.write ('<body style="background-image:url(img/Background/Night.jpg)";>');
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundPosition = "top right"
+document.body.style.backgroundSize = "cover";
+}
+//9-17 day
+else if (hours >= 9 && hours < 17){
+document.write ('<body style="background-image:url(img/Background/Afternoon.jpg)";>');
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundPosition = "top right"
+document.body.style.backgroundSize = "cover";
+}
+//6-8 day
+else if (hours >= 7 && hours < 9){
+document.write ('<body style="background-image:url(img/Background/Morning.jpg)";>');
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundPosition = "top right"
+document.body.style.backgroundSize = "cover";
+}
+//4-6 day
+else if (hours >= 4 && hours < 7){
+document.write ('<body style="background-image:url(img/Background/Morning.jpg)";>');
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundPosition = "top right"
+document.body.style.backgroundSize = "cover";
+}
+else {
+document.write ('<body style="background-image:url(img/Background/Default.jpg)";>');
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundPosition = "top right"
+document.body.style.backgroundSize = "cover";
+}
+
+</script>
+
+
+</html>
